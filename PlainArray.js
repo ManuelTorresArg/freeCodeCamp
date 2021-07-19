@@ -8,9 +8,6 @@ function steamrollAway(arr, resultArray = []){
     return resultArray.filter((item) => (typeof item=='number' || typeof item=='string' || typeof item=='object'));
 };
 
-
-
-
 //console.log(steamrollAway([[["a"]], [["b"]]]) );//should return ["a", "b"].
 
 //console.log(steamrollAway([1, [2], [3, [[4]]]])); //should return [1, 2, 3, 4].
