@@ -1,0 +1,1 @@
+console.log(Math.acos(24/36)*(180/Math.PI));

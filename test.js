@@ -1,10 +1,4 @@
-const array1 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) => accumulator + currentValue;
+lastSurvivor=(l,c)=>c.reduce((a,v)=>a.slice(0,v++)+a.slice(v),l)
 
-// 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer));
-// expected output: 10
-
-// 5 + 1 + 2 + 3 + 4
-console.log(array1.reduce(reducer, 5));
-// expected output: 15
+  console.log(lastSurvivor('abc', [1, 1]));
+  console.log(lastSurvivor('kbc', [0, 1]));
